@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup as soup  # Library for HTML data structures
 from urllib.request import urlopen as uReq  # Library for opening URLs
 import re  # Library for regular expressions
+import pandas as pd  # Library for data structures and data analysis tools
 
 page_url = "https://lifeinformatica.com/categoria-producto/family-componentes/family-procesadores/"
 
@@ -71,3 +72,5 @@ for container in containers:
 
 f.close()
 
+data = pd.read_csv("cpu.csv")
+data.head()
