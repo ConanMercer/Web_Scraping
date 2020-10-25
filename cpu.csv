@@ -1,0 +1,21 @@
+manufacturer,product_name,speed,price 
+AMD,  Ryzen 5 3600 , 4.2, 197.90
+Intel,  Core i7 10700, 4.80, 318.90
+AMD,  Ryzen 5 3400G , 4.2 , 139.90
+Intel,  Core i5 10400F, 4.30, 148.90
+Intel,  Core i5 10400 , 2.90, 165.90
+AMD,  Ryzen 5 2600 , 3.9, 139.90
+Intel,  Core i9 10900X 4.5GHz , 4.5, 629.90
+AMD,  Ryzen 9 3900XT , 4.7, 540.23
+Intel,  Core i3 10100, 4.30, 113.90
+Intel,  Core i7 10700K, 5.10, 369.90
+Intel,  Core i7 9700F , 4.70, 249.75
+Intel,  Core i9 10900 , 5.2, 457.90
+AMD,  Ryzen 7 3800XT , 4.7, 399.90
+Intel,  Core i3 9100F , 4.2, 67.75
+AMD,  Ryzen 5 2600X , 4.2, 149.90
+AMD,  Ryzen 7 2700X , 4.35, 198.90
+Intel,  Core i9 10900K , 5.30, 589.00
+AMD,  Ryzen 5 5600X , 4.60, 309.00
+AMD,  Ryzen 7 5800X , 4.70, 646.00
+AMD,  Ryzen 9 5900X , 4.80, 567.00
