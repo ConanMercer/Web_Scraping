@@ -5,17 +5,17 @@ intel,  core i7 10700, 4.80, 318.90
 intel,  core i7 10700, 2.90, 165.90
 intel,  core i5 10400f, 4.30, 148.90
 amd,  ryzen 5 2600 , 3.9, 139.90
-intel,  core i9 10900x 4.5ghz , 4.5, 629.90
-amd,  ryzen 9 3900xt , 4.7, 540.52
+intel,  core i9 10900x 4.5ghz , 4.5, 610.91
+amd,  ryzen 9 3900xt , 4.7, 543.50
+intel,  pentium gold g6400, 4.00, 55.90
 intel,  core i3 10100, 4.30, 113.90
 intel,  core i3 10100, 4.70, 249.75
 intel,  core i9 10900 , 5.2, 457.90
-intel,  pentium gold g6400, 4.00, 55.90
 amd,  ryzen 7 3800xt , 4.7, 399.90
-intel,  ryzen 7 3800xt , 4.2, 67.75
+amd,  ryzen 7 3700x , 4.4, 329.90
+intel,  ryzen 7 3700x , 4.2, 67.75
 amd,  ryzen 5 2600x , 4.2, 149.90
 amd,  ryzen 7 2700x , 4.35, 198.90
-intel,  core i9 10900k , 5.30, 589.00
 amd,  ryzen 5 5600x , 4.60, 309.00
 amd,  ryzen 7 5800x , 4.70, 464.00
 amd,  ryzen 9 5900x , 4.80, 567.99
