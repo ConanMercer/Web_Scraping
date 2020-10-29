@@ -20,32 +20,29 @@ f.write(headers)
 
 for container in containers:
 
+    # Variables
     element = container.findAll("h2", {"class": "woocommerce-loop-product__title"})[0]
+    split_word = "ghz"
+    amd = "amd"
+    intel = "intel"
+    full_title = element.text.lower()
 
     # Manufacturer
-    manufacturer = element.text.split(" ", 1)[0]
+    manufacturer = element.text.split(" ", 1)[0].lower()
 
     # Speed
-    full_title = element.text
-    split_word = "GHz"
-    split_word2 = "GHZ"
-    if manufacturer == "AMD" and split_word in full_title:
+    if manufacturer == amd and split_word in full_title:
         speed = full_title.partition(split_word)[0].split(" ", 4)[4]
-    if manufacturer == "AMD" and split_word2 in full_title:
-        speed = full_title.partition(split_word2)[0].split(" ", 4)[4]
-    if manufacturer == "Intel":
+    if manufacturer == intel:
         speed = re.search("([^\s]+)" + split_word, full_title).group(1)
 
     # Product Name
-    speed2 = full_title.partition(split_word)[0].split(" ", 4)[4]
-    if manufacturer == "AMD":
-        product_name = re.search(manufacturer + "(.*?)" + speed2, full_title).group(1)
-    elif manufacturer == "Intel" and "núcleos" in full_title:
+    if manufacturer == amd:
+        product_name = re.search(manufacturer + "(.*?)" + speed, full_title).group(1)
+    elif manufacturer == intel and "núcleos" in full_title:
         product_name = re.search(manufacturer + "(.*?)" + "núcleos", full_title).group(
             1
         )[:-3]
-    else:
-        product_name = re.search(manufacturer + "(.*?)" + speed2, full_title).group(1)
 
     # Price
     price = (
@@ -55,9 +52,7 @@ for container in containers:
         .replace(",", ".")
     )
 
-    print("manufacturer: " + manufacturer + "\n")
-    print("product_name: " + product_name + "\n")
-
+    # Write the data into respective columns
     f.write(
         manufacturer
         + ", "
@@ -69,7 +64,7 @@ for container in containers:
         + "\n"
     )
 
-
+# Lastly, the file must be closed
 f.close()
 
 data = pd.read_csv("cpu.csv")
